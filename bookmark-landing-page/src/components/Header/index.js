@@ -47,7 +47,7 @@ const Header = () => {
       </header>
       <section>
         <div className='container'>
-          <div className='grid grid-cols-12 gap-x-12 md:flex-row justify-between items-center py-20'>
+          <div className='grid grid-cols-12 gap-x-12 md:flex-row justify-between items-center pt-16 pb-8'>
             <div className='text-center md:text-left col-span-6 mb-4'>
               <h1 className='text-5xl font-semibold text-zinc-700 leading-snug'>
                 A Simple Bookmark <br /> Manager

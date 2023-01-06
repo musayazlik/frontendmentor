@@ -3,10 +3,11 @@ import Chrome from '../../assets/images/chrome.svg'
 import Firefox from '../../assets/images/firefox.svg'
 import Opera from '../../assets/images/opera.svg'
 import Dots from '../../assets/images/dots.svg'
+import Button from '../Button'
 
 const DownloadExtention = () => {
   return (
-    <section className='mb-20'>
+    <section className=' mb-40'>
       <div className='container grid grid-cols-6'>
         <div className='col-start-2 col-span-4'>
           <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>
@@ -30,9 +31,10 @@ const DownloadExtention = () => {
                 </div>
                 <div className='flex flex-col items-center pb-7'>
                   <img src={Dots} alt='' className='scale-110 mb-7' />
-                  <button className='bg-blue-600 text-white px-6 py-3 rounded-md'>
-                    Add & Install Extension
-                  </button>
+                  <Button
+                    text='Add & Install Extension'
+                    customClass='w-fit py-3 px-6 bg-blue-600 text-white shadow-md shadow-blue-500/20 text-md border-2 border-blue-600 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500'
+                  />
                 </div>
               </div>
             </div>
@@ -47,9 +49,10 @@ const DownloadExtention = () => {
                 </div>
                 <div className='flex flex-col items-center pb-7'>
                   <img src={Dots} alt='' className='scale-110 mb-7' />
-                  <button className='bg-blue-600 text-white px-6 py-3 rounded-md'>
-                    Add & Install Extension
-                  </button>
+                  <Button
+                    text='Add & Install Extension'
+                    customClass='w-fit py-3 px-6 bg-blue-600 text-white shadow-md shadow-blue-500/20 text-md border-2 border-blue-600 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500'
+                  />
                 </div>
               </div>
             </div>
@@ -64,9 +67,10 @@ const DownloadExtention = () => {
                 </div>
                 <div className='flex flex-col items-center pb-7'>
                   <img src={Dots} alt='' className='scale-110 mb-7' />
-                  <button className='bg-blue-600 text-white px-6 py-3 rounded-md'>
-                    Add & Install Extension
-                  </button>
+                  <Button
+                    text='Add & Install Extension'
+                    customClass='w-fit py-3 px-6 bg-blue-600 text-white shadow-md shadow-blue-500/20 text-md border-2 border-blue-600 hover:bg-white hover:text-blue-500 hover:border-2 hover:border-blue-500'
+                  />
                 </div>
               </div>
             </div>

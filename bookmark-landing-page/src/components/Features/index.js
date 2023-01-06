@@ -16,10 +16,10 @@ const Features = () => {
     <section className='relative'>
       <div className='container'>
         <div className='w-1/2 mx-auto'>
-          <h2 className='mb-6  font-semibold text-3xl text-zinc-700 text-center'>
+          <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>
             Features
           </h2>
-          <p className='mb-12 text-lg text-center text-zinc-400 font-normal'>
+          <p className='mb-12 text-xl text-center text-zinc-400 font-normal px-20'>
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.

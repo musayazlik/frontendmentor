@@ -13,7 +13,7 @@ const Features = () => {
   }
 
   return (
-    <section className='relative'>
+    <section className='relative '>
       <div className='container'>
         <div className='w-1/2 mx-auto'>
           <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>

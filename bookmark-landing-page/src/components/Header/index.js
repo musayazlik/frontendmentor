@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../../assets/images/logo.svg'
+import Logo from '../SvgIcon/Logo'
 import Hero from '../../assets/images/hero.svg'
 import Button from '../Button'
 
@@ -10,7 +10,7 @@ const Header = () => {
         <div className='container'>
           <div className='flex justify-between items-center pt-8'>
             <div className='logo'>
-              <img src={Logo} alt='logo' />
+              <Logo textColor={'#232536'} />
             </div>
             <nav className='mr-20'>
               <ul className='flex items-center gap-x-2'>

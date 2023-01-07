@@ -1312,6 +1312,10 @@ video {
   fill: #f43f5e;
 }
 
+.hover\:fill-rose-600:hover{
+  fill: #e86164;
+}
+
 .hover\:text-blue-500:hover{
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1325,6 +1329,11 @@ video {
 .hover\:text-zinc-500:hover{
   --tw-text-opacity: 1;
   color: rgb(150 148 166 / var(--tw-text-opacity));
+}
+
+.hover\:text-rose-600:hover{
+  --tw-text-opacity: 1;
+  color: rgb(232 97 100 / var(--tw-text-opacity));
 }
 
 .focus\:outline-none:focus{

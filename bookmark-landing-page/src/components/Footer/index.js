@@ -31,7 +31,7 @@ const Footer = () => {
               <Button
                 text='Contact Us'
                 customClass={
-                  'bg-rose-600 text-white px-7 py-4 rounded-md flex whitespace-nowrap border-2 border-rose-600 hover:bg-white hover:text-rose-500 duration-200 flex justify-center items-center'
+                  'bg-rose-600 text-white px-7 py-4 rounded-md flex whitespace-nowrap border-2 border-rose-600 hover:bg-white hover:text-rose-600 duration-200 flex justify-center items-center'
                 }
                 textColor={'#fff'}
               />
@@ -50,21 +50,21 @@ const Footer = () => {
                 <li className='px-6 py-3'>
                   <a
                     href='#Features'
-                    className='uppercase text-white hover:text-rose-500 font-normal duration-200 text-base'>
+                    className='uppercase text-white hover:text-rose-600 font-normal duration-200 text-base'>
                     Features
                   </a>
                 </li>
                 <li className='px-6 py-3'>
                   <a
                     href='#Pricing'
-                    className='uppercase text-white hover:text-rose-500 font-normal duration-200 text-base'>
+                    className='uppercase text-white hover:text-rose-600 font-normal duration-200 text-base'>
                     Pricing
                   </a>
                 </li>
                 <li className='px-6 py-3'>
                   <a
                     href='#Contact'
-                    className='uppercase text-white hover:text-rose-500 font-normal duration-200 text-base'>
+                    className='uppercase text-white hover:text-rose-600 font-normal duration-200 text-base'>
                     Contact
                   </a>
                 </li>
@@ -76,14 +76,14 @@ const Footer = () => {
               <li className='px-6 py-3'>
                 <a
                   href='#Facebook'
-                  className='uppercase text-white hover:text-rose-500 font-medium duration-200 text-sm'>
+                  className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
                   <Facebook />
                 </a>
               </li>
               <li className='px-6 py-3'>
                 <a
                   href='#Twitter'
-                  className='uppercase text-white hover:text-rose-500 font-medium duration-200 text-sm'>
+                  className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
                   <Twitter />
                 </a>
               </li>

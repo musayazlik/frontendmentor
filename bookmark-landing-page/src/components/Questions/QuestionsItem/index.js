@@ -11,7 +11,7 @@ const QuestionItem = ({ question, answer }) => {
     <div className='border-b-2 first:border-t-2 '>
       <div className=' pr-4 flex flex-col justify-between '>
         <div
-          className='flex justify-between items-center text-zinc-800 hover:text-rose-500 py-6 cursor-pointer'
+          className='flex justify-between items-center text-zinc-800 hover:text-rose-600 py-6 cursor-pointer'
           onClick={() => {
             handleShow()
           }}>

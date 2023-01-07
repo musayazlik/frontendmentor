@@ -17,28 +17,28 @@ const Header = () => {
                 <li className='px-6 py-3'>
                   <a
                     href='#Features'
-                    className='uppercase text-zinc-700 hover:text-rose-500 font-medium duration-200 text-sm'>
+                    className='uppercase text-zinc-700 hover:text-rose-600 font-medium duration-200 text-sm'>
                     Features
                   </a>
                 </li>
                 <li className='px-6 py-3'>
                   <a
                     href='#Pricing'
-                    className='uppercase text-zinc-700 hover:text-rose-500 font-medium duration-200 text-sm'>
+                    className='uppercase text-zinc-700 hover:text-rose-600 font-medium duration-200 text-sm'>
                     Pricing
                   </a>
                 </li>
                 <li className='px-6 py-3'>
                   <a
                     href='#Contact'
-                    className='uppercase text-zinc-700 hover:text-rose-500 font-medium duration-200 text-sm'>
+                    className='uppercase text-zinc-700 hover:text-rose-600 font-medium duration-200 text-sm'>
                     Contact
                   </a>
                 </li>
 
                 <Button
                   text='Login'
-                  customClass='uppercase border-2 bg-rose-500 text-white border-rose-500 hover:bg-white hover:text-rose-500 text-md py-2 px-8 ml-4 '
+                  customClass='uppercase border-2 bg-rose-600 text-white border-rose-600 hover:bg-white hover:text-rose-600 text-md py-2 px-8 ml-4 '
                 />
               </ul>
             </nav>

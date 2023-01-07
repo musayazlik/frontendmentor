@@ -9,6 +9,7 @@ module.exports = {
         'blue-600': '#5464db',
         'zinc-700': '#242843',
         'zinc-500': '#9694a6',
+        'rose-600': '#e86164',
       },
     },
     container: {

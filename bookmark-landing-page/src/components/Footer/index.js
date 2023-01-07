@@ -9,13 +9,33 @@ const Footer = () => {
     <footer>
       <section className='bg-blue-600 py-24'>
         <div className='container text-center space-y-8'>
-          <p className='uppercase text-sm text-white tracking-[6px] '>
-            35.000+ already joined
-          </p>
-          <p className=''></p>
-          <div className='flex flex-col items-center gap-2 font-medium text-4xl text-white'>
-            <p>Stay up-to-date with what</p>
-            <p>we're doing</p>
+          <div className='flex flex-col justify-center'>
+            <p className='uppercase text-sm text-white mb-6 tracking-[6px] w-1/2 mx-auto '>
+              35.000+ already joined
+            </p>
+            <div className='flex flex-col items-center gap-2 font-medium text-4xl text-white w-1/2 mx-auto mb-6 '>
+              <p>Stay up-to-date with what</p>
+              <p>we're doing</p>
+            </div>
+            <div className='flex items-center gap-4 justify-center w-1/2 mx-auto px-28 '>
+              <div className='w-full relative bg-rose-600 p-0.5 rounded-md'>
+                <input
+                  type='text'
+                  className='px-4 py-4 border-2 border-rose-600 bg-white rounded-md w-full focus:outline-none text-lg  '
+                  placeholder='Enter your email address'
+                />
+                <p className='absolute bg-rose-600 w-full text-start px-4 py-1 rounded-b-md text left-0 text-white font-medium italic'>
+                  Whoops, make sure it's an email
+                </p>
+              </div>
+              <Button
+                text='Contact Us'
+                customClass={
+                  'bg-rose-600 text-white px-7 py-4 rounded-md flex whitespace-nowrap border-2 border-rose-600 hover:bg-white hover:text-rose-500 duration-200 flex justify-center items-center'
+                }
+                textColor={'#fff'}
+              />
+            </div>
           </div>
         </div>
       </section>

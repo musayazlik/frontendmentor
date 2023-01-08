@@ -15,7 +15,7 @@ const Features = () => {
   return (
     <section className='relative '>
       <div className='container'>
-        <div className='w-1/2 mx-auto'>
+        <div className='lg:w-3/4 xl:w-1/2 mx-auto'>
           <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>
             Features
           </h2>
@@ -29,18 +29,18 @@ const Features = () => {
 
       <div className='container'>
         <div className='flex justify-center mb-24'>
-          <div className='featuresTab inline-flex mx-auto gap-x-6 flex-row justify-center border-b-2 border-zinc-200'>
+          <ul className='featuresTab flex flex-col lg:flex-row lg:inline-flex lg:mx-auto gap-x-6 justify-center lg:border-b-2 border-zinc-200 text-center lg:w-auto w-full'>
             {featuresData.map((item, index) => (
               <FeaturesTabItem
                 key={index}
                 text={item.tabName}
-                customClass='text-zinc-300'
+                customClass='text-zinc-300 w-full'
                 activeTab={activeTab}
                 index={index}
                 onClick={() => handleTab(index)}
               />
             ))}
-          </div>
+          </ul>
         </div>
       </div>
       <div className='tabWrapper relative pb-24 mb-24'>

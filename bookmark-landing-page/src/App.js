@@ -10,9 +10,9 @@ function App() {
     <>
       <Header />
       <Features />
-      <DownloadExtention />
+      {/* <DownloadExtention />
       <Questions />
-      <Footer />
+      <Footer />  */}
     </>
   )
 }

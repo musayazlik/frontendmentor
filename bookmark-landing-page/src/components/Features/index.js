@@ -13,7 +13,7 @@ const Features = () => {
   }
 
   return (
-    <section className='relative mt-24 lg:mt-0 '>
+    <section className='relative mt-24 lg:mt-0 overflow-x-hidden '>
       <div className='container'>
         <div className=' mx-auto flex flex-col items-center'>
           <h2 className='mb-6  font-semibold text-2xl sm:text-4xl text-zinc-700 text-center'>

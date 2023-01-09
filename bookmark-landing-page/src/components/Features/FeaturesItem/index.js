@@ -11,7 +11,7 @@ const FeaturesItem = ({ image, title, paragraph }) => {
         <h3 className='mb-6 text-2xl sm:text-4xl  font-semibold text-zinc-700 text-center lg:text-start'>
           {title}
         </h3>
-        <p className='mb-10 text-md sm:text-xl text-zinc-400 font-normal max-w-md text-center lg:text-start'>
+        <p className='mb-10 text-md sm:text-xl text-zinc-400 font-normal max-w-xs sm:max-w-lg text-center lg:text-start'>
           {paragraph}
         </p>
         <Button

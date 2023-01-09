@@ -15,11 +15,11 @@ const Features = () => {
   return (
     <section className='relative mt-24 lg:mt-0 '>
       <div className='container'>
-        <div className='lg:w-3/4 xl:w-1/2 mx-auto'>
-          <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>
+        <div className=' mx-auto flex flex-col items-center'>
+          <h2 className='mb-6  font-semibold text-2xl sm:text-4xl text-zinc-700 text-center'>
             Features
           </h2>
-          <p className='mb-12 text-xl text-center text-zinc-400 font-normal sm:px-20'>
+          <p className='mb-12 text-md sm:text-xl text-zinc-400 font-normal max-w-xs sm:max-w-3xl text-center sm:px-20'>
             Our aim is to make it quick and easy for you to access your
             favourite websites. Your bookmarks sync between your devices so you
             can access them on the go.
@@ -43,7 +43,7 @@ const Features = () => {
           </ul>
         </div>
       </div>
-      <div className='tabWrapper relative pb-24 mb-24'>
+      <div className='tabWrapper relative pb-24 lg:mb-24'>
         <div className='container'>
           <FeaturesItem
             image={featuresData[activeTab].image}

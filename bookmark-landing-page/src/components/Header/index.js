@@ -3,6 +3,8 @@ import Logo from '../SvgIcon/Logo'
 import Hero from '../../assets/images/hero.svg'
 import Button from '../Button'
 import Close from '../SvgIcon/Close'
+import Facebook from '../SvgIcon/Facebook'
+import Twitter from '../SvgIcon/Twitter'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
@@ -59,43 +61,65 @@ const Header = () => {
               </button>
               <nav
                 className={`${
-                  isMenuOpen === true ? 'block' : 'hidden'
-                } fixed w-screen h-screen bg-slate-900/90 left-0 top-0 px-12 py-12`}>
-                <div className='mb-12 flex justify-between items-center'>
-                  <Logo
-                    textColor={'#fff'}
-                    circleFill={'#fff'}
-                    circlePath={'#0F172A'}
-                  />
-                  <button
-                    className='flex items-center px-3 py-2  rounded text-zinc-200 hover:text-rose-600 hover:border-rose-600 close scale-105 duration-200 '
-                    onClick={() => setIsMenuOpen(false)}>
-                    <Close />
-                  </button>
+                  isMenuOpen === true
+                    ? 'flex flex-col justify-between items-center'
+                    : 'hidden'
+                } fixed z-50 w-screen h-screen bg-slate-900/90 left-0 top-0 px-12 py-12`}>
+                <div className='w-full'>
+                  <div className='mb-12 flex justify-between items-center'>
+                    <Logo
+                      textColor={'#fff'}
+                      circleFill={'#fff'}
+                      circlePath={'#0F172A'}
+                    />
+                    <button
+                      className='flex items-center px-3 py-2  rounded text-zinc-200 hover:text-rose-600 hover:border-rose-600 close scale-105 duration-200 '
+                      onClick={() => setIsMenuOpen(false)}>
+                      <Close />
+                    </button>
+                  </div>
+                  <ul className='flex flex-col items-center '>
+                    <li className='px-6 py-5 border-b-2 first:border-t-2 border-slate-600/50 w-full text-center'>
+                      <a
+                        href='#Features'
+                        className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
+                        Features
+                      </a>
+                    </li>
+                    <li className='px-6 py-5 border-b-2 border-slate-600/50 w-full text-center'>
+                      <a
+                        href='#Pricing'
+                        className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
+                        Pricing
+                      </a>
+                    </li>
+                    <li className='px-6 py-5 border-b-2 border-slate-600/50 w-full text-center'>
+                      <a
+                        href='#Contact'
+                        className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
                 </div>
-                <ul className='flex flex-col items-center h-full w-full'>
-                  <li className='px-6 py-5 border-b-2 first:border-t-2 border-slate-600/50 w-full text-center'>
-                    <a
-                      href='#Features'
-                      className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
-                      Features
-                    </a>
-                  </li>
-                  <li className='px-6 py-5 border-b-2 border-slate-600/50 w-full text-center'>
-                    <a
-                      href='#Pricing'
-                      className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
-                      Pricing
-                    </a>
-                  </li>
-                  <li className='px-6 py-5 border-b-2 border-slate-600/50 w-full text-center'>
-                    <a
-                      href='#Contact'
-                      className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
-                      Contact
-                    </a>
-                  </li>
-                </ul>
+                <div className='social'>
+                  <ul className='flex items-center space-x-8'>
+                    <li className=''>
+                      <a
+                        href='#Facebook'
+                        className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
+                        <Facebook />
+                      </a>
+                    </li>
+                    <li className=''>
+                      <a
+                        href='#Twitter'
+                        className='uppercase text-white hover:text-rose-600 font-medium duration-200 text-sm'>
+                        <Twitter />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </nav>
             </div>
           </div>

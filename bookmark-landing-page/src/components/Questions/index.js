@@ -6,16 +6,16 @@ const Questions = () => {
   return (
     <section className='mb-40'>
       <div className='container grid grid-cols-6'>
-        <div className='col-start-2 col-span-4'>
-          <h2 className='mb-6  font-semibold text-4xl text-zinc-700 text-center'>
+        <div className=' mx-auto flex flex-col items-center col-span-12'>
+          <h2 className='mb-6  font-semibold text-2xl sm:text-4xl text-zinc-700 text-center'>
             Frequently Asked Questions
           </h2>
-          <p className='mb-12 text-xl text-center text-zinc-400 font-normal leading-8 px-40'>
+          <p className='mb-12 text-md sm:text-xl text-zinc-400 font-normal max-w-xs sm:max-w-3xl text-center sm:px-20'>
             Here are some of our FAQs. If you have any other questions you'd
             like answered please feel free to email us.
           </p>
         </div>
-        <div className='px-40 col-start-2 col-span-4 mb-12'>
+        <div className='col-span-12 w-full sm:max-w-xl mx-auto mb-12'>
           {questionData.map((item, index) => {
             return (
               <QuestionItem

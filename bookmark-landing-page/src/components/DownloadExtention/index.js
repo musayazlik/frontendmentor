@@ -7,7 +7,7 @@ import Button from '../Button'
 
 const DownloadExtention = () => {
   return (
-    <section className=' mb-40 px-6'>
+    <section className=' mb-40 px-6 mt-20'>
       <div className='xl:container grid grid-cols-12'>
         <div className=' mx-auto flex flex-col items-center col-span-12'>
           <h2 className='mb-6  font-semibold text-2xl sm:text-4xl text-zinc-700 text-center'>
@@ -18,9 +18,9 @@ const DownloadExtention = () => {
             you've got a favourite you'd like us to prioritize.
           </p>
         </div>
-        <div className=' col-span-12'>
+        <div className=' col-span-12 px-8 md:px-4'>
           <div className='grid grid-cols-12 gap-y-10 lg:gap-x-10'>
-            <div className='card-1 shadow-xl col-span-12 lg:col-span-4 max-w-md mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max '>
+            <div className='card-1 shadow-xl col-span-12 lg:col-span-4 max-w-sm mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max '>
               <div className='flex flex-col justify-between items-center w-full  gap-10 pt-7 '>
                 <img src={Chrome} alt='' className='w-28' />
                 <div className='inline-flex flex-col items-center justify-start w-full  '>
@@ -38,7 +38,7 @@ const DownloadExtention = () => {
                 </div>
               </div>
             </div>
-            <div className='card-2 shadow-xl col-span-12 lg:col-span-4 max-w-md mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max lg:mt-20'>
+            <div className='card-2 shadow-xl col-span-12 lg:col-span-4 max-w-sm mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max lg:mt-20'>
               <div className='flex flex-col justify-between items-center  gap-10 pt-7'>
                 <img src={Firefox} alt='' className='w-28' />
                 <div className='inline-flex flex-col items-center justify-start  '>
@@ -56,7 +56,7 @@ const DownloadExtention = () => {
                 </div>
               </div>
             </div>
-            <div className='card-3 shadow-xl col-span-12 lg:col-span-4 max-w-md mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max lg:mt-40'>
+            <div className='card-3 shadow-xl col-span-12 lg:col-span-4 max-w-sm mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max lg:mt-40'>
               <div className='flex flex-col justify-between items-center  gap-10 pt-7 '>
                 <img src={Opera} alt='' className='w-28' />
                 <div className='inline-flex flex-col items-center justify-start  '>

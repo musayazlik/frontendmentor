@@ -3,8 +3,29 @@ import Logo from '../SvgIcon/Logo'
 import Button from '../Button'
 import Facebook from '../SvgIcon/Facebook'
 import Twitter from '../SvgIcon/Twitter'
+import Warning from '../SvgIcon/Warning'
 
 const Footer = () => {
+  const [email, setEmail] = React.useState({ value: '', error: false })
+
+  const handleEmail = (e) => {
+    e.preventDefault()
+    function ValidateEmail(mail) {
+      if (
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target[0].value)
+      ) {
+        return true
+      }
+      return false
+    }
+
+    if (ValidateEmail(e.target[0].value)) {
+      setEmail({ value: e.target[0].value, error: true })
+    } else {
+      setEmail({ value: e.target[0].value, error: false })
+    }
+  }
+
   return (
     <footer>
       <section className='bg-blue-600 py-24'>
@@ -17,16 +38,31 @@ const Footer = () => {
               <p>Stay up-to-date with what</p>
               <p>we're doing</p>
             </div>
-            <div className='flex flex-col sm:flex-row items-start gap-4 justify-center max-w-xl  sm:mx-auto w-full px-6 mx-auto '>
-              <div className=' bg-rose-600 p-0.5 rounded-md w-full'>
+            <form
+              onSubmit={(e) => handleEmail(e)}
+              className='flex flex-col sm:flex-row items-start gap-4 justify-center max-w-xl  sm:mx-auto w-full px-6 mx-auto '>
+              <div
+                className={`${
+                  email.error === false ? 'bg-rose-600 p-0.5 pr-1' : ''
+                }  rounded-md w-full relative duration-200`}>
                 <input
                   type='text'
-                  className=' px-4 py-4 border-2 w-full border-rose-600 bg-white rounded-md  focus:outline-none text-lg  '
+                  name='email'
+                  className={` ${
+                    email.error === false ? 'border-2 border-rose-600' : ''
+                  } px-4 py-4  w-full  bg-white rounded-md  focus:outline-none text-lg duration-200`}
                   placeholder='Enter your email address'
                 />
-                <p className=' bg-rose-600 text-sm sm:text-base  text-start px-4 py-1 rounded-b-md left-0 text-white font-medium italic '>
-                  Whoops, make sure it's an email
-                </p>
+                {email.error === false ? (
+                  <>
+                    <p className=' bg-rose-600 text-sm sm:text-base  text-start px-4 py-1 rounded-b-md left-0 text-white font-medium italic duration-200 '>
+                      Whoops, make sure it's an email
+                    </p>
+                    <span className='errorIcon absolute top-5 z-10 right-5 text-rose-600 duration-200 animate-pulse '>
+                      <Warning />
+                    </span>
+                  </>
+                ) : null}
               </div>
               <Button
                 text='Contact Us'
@@ -35,7 +71,7 @@ const Footer = () => {
                 }
                 textColor={'#fff'}
               />
-            </div>
+            </form>
           </div>
         </div>
       </section>

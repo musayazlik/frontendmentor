@@ -1,26 +1,26 @@
 export const questionData = [
   {
     id: 1,
-    question: 'How many team members can I invite?',
+    question: 'What is Bookmark?',
     answer:
-      'You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.',
+      'Bookmark is a free to use browser extension that allows you to access your favourite websites in one click. Simply add a website and get instant access to it by clicking on the Bookmark icon.',
   },
   {
     id: 2,
-    question: 'What is the maximum file upload size?',
+    question: 'How can I request a new browser?',
     answer:
-      'No more than 2GB. All files in your account must fit your allotted storage space.',
+      'Yes! Send us a message and we’ll process your request no questions asked.',
   },
   {
     id: 3,
-    question: 'How do I reset my password?',
+    question: 'Is there a mobile app?',
     answer:
-      'Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.',
+      'We currently have an Android app in beta. It will be available on the Google Play soon!',
   },
   {
     id: 4,
-    question: 'Can I cancel my subscription?',
+    question: 'What about other Chromium browsers?',
     answer:
-      'Yes! Send us a message and we’ll process your request no questions asked.',
+      'We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.',
   },
 ]

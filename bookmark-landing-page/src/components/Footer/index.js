@@ -1,4 +1,6 @@
-import React from 'react'
+import { useState } from 'react'
+
+/** Components */
 import Logo from '../SvgIcon/Logo'
 import Button from '../Button'
 import Facebook from '../SvgIcon/Facebook'
@@ -6,12 +8,13 @@ import Twitter from '../SvgIcon/Twitter'
 import Warning from '../SvgIcon/Warning'
 
 const Footer = () => {
-  const [email, setEmail] = React.useState({ value: '', error: false })
+  const [email, setEmail] = useState({ value: '', error: false })
 
   const handleEmail = (e) => {
     e.preventDefault()
     function ValidateEmail(mail) {
       if (
+        // eslint-disable-next-line
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target[0].value)
       ) {
         return true
@@ -19,10 +22,12 @@ const Footer = () => {
       return false
     }
 
+    console.log(ValidateEmail(e.target[0].value))
+
     if (ValidateEmail(e.target[0].value)) {
-      setEmail({ value: e.target[0].value, error: true })
-    } else {
       setEmail({ value: e.target[0].value, error: false })
+    } else {
+      setEmail({ value: e.target[0].value, error: true })
     }
   }
 
@@ -43,17 +48,17 @@ const Footer = () => {
               className='flex flex-col sm:flex-row items-start gap-4 justify-center max-w-xl  sm:mx-auto w-full px-6 mx-auto '>
               <div
                 className={`${
-                  email.error === false ? 'bg-rose-600 p-0.5 pr-1' : ''
+                  email.error === true ? 'bg-rose-600 p-0.5 pr-1' : ''
                 }  rounded-md w-full relative duration-200`}>
                 <input
                   type='text'
                   name='email'
                   className={` ${
-                    email.error === false ? 'border-2 border-rose-600' : ''
+                    email.error === true ? 'border-2 border-rose-600' : ''
                   } px-4 py-4  w-full  bg-white rounded-md  focus:outline-none text-lg duration-200`}
                   placeholder='Enter your email address'
                 />
-                {email.error === false ? (
+                {email.error === true ? (
                   <>
                     <p className=' bg-rose-600 text-sm sm:text-base  text-start px-4 py-1 rounded-b-md left-0 text-white font-medium italic duration-200 '>
                       Whoops, make sure it's an email

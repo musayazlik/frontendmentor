@@ -1,4 +1,6 @@
+/** Data */
 import { questionData } from '../../api/questionData'
+/** Components */
 import Button from '../Button'
 import QuestionItem from './QuestionsItem'
 

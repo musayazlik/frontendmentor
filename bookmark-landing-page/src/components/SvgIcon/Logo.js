@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Logo = ({ textColor, circleFill = "#5267DF" , circlePath = "#fff" }) => {
+const Logo = ({ textColor, circleFill = '#5267DF', circlePath = '#fff' }) => {
   return (
     <svg width='148' height='25' xmlns='http://www.w3.org/2000/svg'>
       <g fill='none' fillRule='evenodd'>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { featuresData } from '../../api/featuresData'
 
+/** Components */
 import FeaturesItem from './FeaturesItem'
 import FeaturesTabItem from './FeaturesTabItem'
 

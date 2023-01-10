@@ -1,8 +1,9 @@
-import React from 'react'
+import { useState } from 'react'
+/** Components */
 import ArrowSvg from './arrowSvg'
 
 const QuestionItem = ({ question, answer }) => {
-  const [show, setShow] = React.useState(false)
+  const [show, setShow] = useState(false)
 
   const handleShow = () => {
     setShow(!show)

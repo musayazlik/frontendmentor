@@ -1,4 +1,7 @@
+/** Style */
 import './styles/App.css'
+
+/** Components */
 import Header from './components/Header'
 import Features from './components/Features'
 import DownloadExtention from './components/DownloadExtention'

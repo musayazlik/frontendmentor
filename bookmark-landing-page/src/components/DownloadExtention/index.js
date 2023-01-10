@@ -1,4 +1,4 @@
-import React from 'react'
+/** Components */
 import Chrome from '../../assets/images/chrome.svg'
 import Firefox from '../../assets/images/firefox.svg'
 import Opera from '../../assets/images/opera.svg'

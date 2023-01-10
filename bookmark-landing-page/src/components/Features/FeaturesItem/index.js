@@ -1,4 +1,4 @@
-import React from 'react'
+/** Components */
 import Button from '../../Button'
 
 const FeaturesItem = ({ image, title, paragraph }) => {

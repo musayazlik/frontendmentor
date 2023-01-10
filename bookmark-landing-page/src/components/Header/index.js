@@ -1,13 +1,17 @@
-import React from 'react'
+import { useState } from 'react'
+
+/** Image */
 import Logo from '../SvgIcon/Logo'
 import Hero from '../../assets/images/hero.svg'
+
+/** Components */
 import Button from '../Button'
 import Close from '../SvgIcon/Close'
 import Facebook from '../SvgIcon/Facebook'
 import Twitter from '../SvgIcon/Twitter'
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
       <header>

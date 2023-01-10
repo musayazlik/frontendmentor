@@ -125,10 +125,10 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <section>
-        <div className='lg:container mx-auto px-6'>
-          <div className=' flex flex-col-reverse md:grid grid-cols-12 gap-x-12 md:flex-row justify-between items-center pt-8 md:pt-16 pb-8'>
-            <div className='text-center md:text-left col-span-12 md:col-span-6 mb-4 flex flex-col items-center md:items-start '>
+      <section className='relative lg:mb-20'>
+        <div className='lg:container mx-auto px-6 relative'>
+          <div className=' flex flex-col-reverse lg:grid grid-cols-12 lg:gap-x-12 md:flex-row justify-between items-center pt-8 md:pt-16 pb-8 '>
+            <div className='text-center md:text-left col-span-12 lg:col-span-6 mb-4 mt-24 sm:mt-20 md:mt-0 flex flex-col items-center md:items-start '>
               <h1 className='text-3xl lg:text-5xl font-semibold text-zinc-700 leading-snug'>
                 A Simple Bookmark <br /> Manager
               </h1>
@@ -148,7 +148,7 @@ const Header = () => {
                 />
               </div>
             </div>
-            <div className='mt-8 md:mt-0 col-span-12 md:col-span-6'>
+            <div className='mt-8 md:mt-0 col-span-12 lg:col-span-6'>
               <img
                 src={Hero}
                 alt='hero'
@@ -156,7 +156,9 @@ const Header = () => {
               />
             </div>
           </div>
+          <span className='absolute top-[40vw] sm:top-56 md:top-40 lg:-bottom-16 right-0 my-auto h-[40vw] sm:h-[30%] md:h-[40%] lg:h-[60%] 2xl:h-[30vh] w-3/4 md:w-[30%]  bg-blue-600 -z-10 rounded-l-full '></span>
         </div>
+        <span className='absolute top-[40vw] sm:top-56 md:top-40  lg:-bottom-16 right-0 my-auto h-[40vw] sm:h-[30%] md:h-[40%] lg:h-[60%] 2xl:h-[30vh] w-3/4 md:w-[30%] lg:w-[35%] xl:w-[40vw] bg-blue-600 -z-10 rounded-l-full'></span>
       </section>
     </>
   )

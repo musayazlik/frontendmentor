@@ -16,7 +16,7 @@ const Features = () => {
     <section className='relative mt-24 lg:mt-0 overflow-x-hidden '>
       <div className='container'>
         <div className=' mx-auto flex flex-col items-center'>
-          <h2 className='mb-6  font-semibold text-2xl sm:text-4xl text-zinc-700 text-center'>
+          <h2 className='mb-6  font-semibold text-3xl sm:text-4xl text-zinc-700 text-center'>
             Features
           </h2>
           <p className='mb-12 text-md sm:text-xl text-zinc-400 font-normal max-w-xs sm:max-w-3xl text-center sm:px-20'>
@@ -43,16 +43,18 @@ const Features = () => {
           </ul>
         </div>
       </div>
-      <div className='tabWrapper relative pb-24 lg:mb-24'>
-        <div className='container'>
+      <div className='tabWrapper relative pb-40'>
+        <div className='container relative'>
           <FeaturesItem
             image={featuresData[activeTab].image}
             title={featuresData[activeTab].title}
             paragraph={featuresData[activeTab].paragraph}
           />
+          <span className='absolute bottom-64 lg:-bottom-28 left-0 my-auto h-[328px] sm:h-[365px] md:h-[340px] xl:h-[400px] w-3/4 md:w-[60%] lg:w-[40%] bg-blue-600 -z-10 rounded-r-full'></span>
         </div>
-        {/* <span className='absolute h-72 w-[35pc] bg-blue-600 block bottom-0 my-auto rounded-r-full -z-10'></span> */}
       </div>
+
+      <span className='absolute bottom-[416px] lg:bottom-12 left-0 my-auto h-[328px] sm:h-[365px] md:h-[340px] xl:h-[400px] w-3/4 md:w-[60%] lg:w-[45%]  bg-blue-600 -z-10 rounded-r-full'></span>
     </section>
   )
 }

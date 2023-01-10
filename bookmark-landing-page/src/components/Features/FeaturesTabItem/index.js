@@ -5,7 +5,7 @@ const index = ({ text, index, onClick, activeTab }) => {
     <li
       key={index}
       onClick={onClick}
-      className={`border-b-2 first:border-t-2 w-full px-12 lg:px-0 py-6  `}>
+      className={`border-b-2 first:border-t-2 lg:first:border-t-0  w-full px-12 lg:px-0 py-6  `}>
       <span
         className={` ${
           activeTab === index

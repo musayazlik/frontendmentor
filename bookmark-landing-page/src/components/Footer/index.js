@@ -17,7 +17,7 @@ const Footer = () => {
               <p>Stay up-to-date with what</p>
               <p>we're doing</p>
             </div>
-            <div className='flex flex-col sm:flex-row items-start gap-4 justify-center max-w-xl  sm:mx-auto w-full px-8 '>
+            <div className='flex flex-col sm:flex-row items-start gap-4 justify-center max-w-xl  sm:mx-auto w-full px-6 mx-auto '>
               <div className=' bg-rose-600 p-0.5 rounded-md w-full'>
                 <input
                   type='text'
@@ -46,7 +46,7 @@ const Footer = () => {
               <Logo textColor={'#fff'} />
             </div>
             <nav className=''>
-              <ul className='flex flex-col md:flex-row items-center gap-x-2 gap-6'>
+              <ul className='flex flex-col md:flex-row items-center gap-x-6 gap-6'>
                 <li className=''>
                   <a
                     href='#Features'

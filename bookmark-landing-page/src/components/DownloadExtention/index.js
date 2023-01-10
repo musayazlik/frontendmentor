@@ -18,7 +18,7 @@ const DownloadExtention = () => {
             you've got a favourite you'd like us to prioritize.
           </p>
         </div>
-        <div className=' col-span-12 px-8 md:px-4'>
+        <div className=' col-span-12 px-8 md:px-4 max-w-5xl mx-auto'>
           <div className='grid grid-cols-12 gap-y-10 lg:gap-x-10'>
             <div className='card-1 shadow-xl col-span-12 lg:col-span-4 max-w-sm mx-auto shadow-blue-300/20 rounded-2xl bg-white w-full h-max '>
               <div className='flex flex-col justify-between items-center w-full  gap-10 pt-7 '>

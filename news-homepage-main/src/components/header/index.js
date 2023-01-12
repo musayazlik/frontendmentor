@@ -3,6 +3,7 @@ import React from 'react'
 import Logo from '../../assets/images/logo.svg'
 import MenuIcon from '../../assets/images/icon-menu.svg'
 import CloseMenuIcon from '../../assets/images/icon-menu-close.svg'
+import NavbarMenu from '../navbarMenu'
 
 const Header = () => {
   const [showMenu, setShowMenu] = React.useState(false)
@@ -16,23 +17,12 @@ const Header = () => {
         <nav className='flex items-center justify-between w-full max-w-7xl mx-auto'>
           <img src={Logo} alt='' />
 
-          <ul className='hidden md:flex space-x-3'>
-            <li className='text-p-light hover:text-p-red px-4 py-2 duration-200'>
-              <a href='#Home'>Home</a>
-            </li>
-            <li className='text-p-light hover:text-p-red px-4 py-2 duration-200'>
-              <a href='#New'>New</a>
-            </li>
-            <li className='text-p-light hover:text-p-red px-4 py-2 duration-200'>
-              <a href='#Popular'>Popular</a>
-            </li>
-            <li className='text-p-light hover:text-p-red px-4 py-2 duration-200'>
-              <a href='#Treding'>Treding</a>
-            </li>
-            <li className='text-p-light hover:text-p-red px-4 py-2 duration-200'>
-              <a href='#Categories'>Categories</a>
-            </li>
-          </ul>
+          {/* Desktop Menu */}
+
+          <NavbarMenu
+            ulclass={'hidden md:flex space-x-3'}
+            liclass={'text-p-light hover:text-p-red px-4 py-2 duration-200'}
+          />
 
           {/* Mobile Menu */}
           <div className='md:hidden '>
@@ -48,23 +38,12 @@ const Header = () => {
                   <img src={CloseMenuIcon} alt='Close Icon' width={40} />
                 </button>
               </div>
-              <ul className='flex flex-col gap-2 mt-20'>
-                <li className='text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200 font-normal'>
-                  <a href='#Home'>Home</a>
-                </li>
-                <li className='text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200'>
-                  <a href='#New'>New</a>
-                </li>
-                <li className='text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200'>
-                  <a href='#Popular'>Popular</a>
-                </li>
-                <li className='text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200'>
-                  <a href='#Treding'>Treding</a>
-                </li>
-                <li className='text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200 '>
-                  <a href='#Categories'>Categories</a>
-                </li>
-              </ul>
+              <NavbarMenu
+                liclass={
+                  'text-p-dark text-2xl hover:text-p-red px-4 py-2 duration-200'
+                }
+                ulclass={'flex flex-col gap-2 mt-20'}
+              />
             </div>
             <div
               className={`${

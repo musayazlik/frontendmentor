@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div>
       <div className='container mt-10 md:mt-20 mb-14 '>
-        <nav className='flex items-center justify-between w-full max-w-7xl mx-auto'>
+        <nav className='flex items-center justify-between w-full  mx-auto'>
           <img src={Logo} alt='' />
 
           {/* Desktop Menu */}
